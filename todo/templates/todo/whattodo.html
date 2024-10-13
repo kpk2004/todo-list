@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'todo/whattodo.css'%}">
+<body>
+<h1 id="head">To do list</h1>
+<a href="/todo/edit/" id="edit">edit</a>
+<ul>
+  {% for x in todolistshow %}
+    <li id="list">{{ x.todo }}<input type="checkbox" id="box"></li>
+  {% endfor %}
+</ul>
+<form method="post">
+    {%csrf_token%}
+    {{form.task}}
+    <button type="submit" id="btn">new task</button>
+</form>
+</body>
+</html>

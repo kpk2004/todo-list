@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{%static 'todo/edit.css'%}">
+    </head>
+    <body>
+        <h1 id="head">Edit To do list</h1>
+        
+        {% for x in todolistshow %}
+            <ol id="lst">{{ x.todo }} <a href="/todo/{{x.id}}/"><button type="button" id="btn">delete</button></a></ol>
+        {% endfor %}
+        
+        <a href="/todo/"><button type="button" id="done">done</button></a>
+    </body>
+</html>

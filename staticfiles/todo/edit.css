@@ -1,0 +1,30 @@
+body{
+    background-image: url('productivity.png');
+    background-position: center top;
+    padding-left: 100px;
+    margin:12px;
+}
+#head{
+    color: darkslategrey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:80px;
+}
+#lst{
+    color: rgb(26, 50, 75);
+    font-size: 30px;
+}
+#btn{
+    border-radius: 8px;
+    border-color: lightcoral ;
+    color:aliceblue;
+    background-color:lightcoral;
+    font-size: 20px;
+}
+#done{
+    margin-left: 45px;
+    border-radius: 8px;
+    border-color: rgb(114, 50, 114);
+    color: aliceblue;
+    background-color:rgb(119, 56, 119);
+    font-size: 20px;
+}
